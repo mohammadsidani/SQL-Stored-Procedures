@@ -17,3 +17,16 @@ WHERE Country = 'USA';
 
 ```
 ```PostgreSQL
+PostgreSQL
+
+CREATE PROCEDURE us_customers ()
+LANGUAGE SQL
+AS $$
+SELECT customer_id, first_name
+FROM Customers
+WHERE Country = 'USA';
+$$;
+```
+```MySQL
+MySQL
+
