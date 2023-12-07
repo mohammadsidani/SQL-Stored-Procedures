@@ -8,7 +8,7 @@ Stored procedures are thus similar to functions in programming. They can perform
 
 Create stored procedures using the CREATE PROCEDURE command followed by SQL commands. For example,
 ```SQL Server
---SQL Server
+-- SQL Server
 
 CREATE PROCEDURE us_customers AS
 SELECT customer_id, first_name
@@ -17,7 +17,7 @@ WHERE Country = 'USA';
 
 ```
 ```PostgreSQL
-PostgreSQL
+-- PostgreSQL
 
 CREATE PROCEDURE us_customers ()
 LANGUAGE SQL
