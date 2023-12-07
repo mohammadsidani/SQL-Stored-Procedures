@@ -54,4 +54,15 @@ END;
 ```
 The commands above create a stored procedure named us_customers in various DBMS. This procedure selects the **customer_id** and **first_name** columns of those customers who live in the USA from the **Customers table**.
 
+## Executing Stored Procedure
+
+Now, whenever we want to fetch all customers who live in the USA, we can simply call the procedure mentioned above. For example,
+
+```sql
+-- SQL Server, Oracle
+
+EXEC us_customers;
+
+```
+
 
