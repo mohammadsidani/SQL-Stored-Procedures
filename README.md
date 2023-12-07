@@ -40,6 +40,8 @@ END //
 DELIMITER ;
 ```
 ```Oracle
+-- Oracle
+
 CREATE PROCEDURE us_customers
 AS res SYS_REFCURSOR;  
 BEGIN
