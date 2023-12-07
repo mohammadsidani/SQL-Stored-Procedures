@@ -6,7 +6,7 @@ Stored procedures are thus similar to functions in programming. They can perform
 
 ## Creating a Procedure
 
-Create stored procedures using the CREATE PROCEDURE command followed by SQL commands. For example,
+Create stored procedures using the `CREATE PROCEDURE` command followed by SQL commands. For example,
 ```sql
 -- SQL Server
 
@@ -69,4 +69,15 @@ EXEC us_customers;
 CALL us_customers();
 ```
 
+## Drop Procedure
+
+We can delete stored procedures by using the `DROP PROCEDURE` command. For example,
+
+```sql
+-- SQL Server, PostgreSQL, MySQL
+
+DROP PROCEDURE us_customers;
+```
+
+Here, the SQL command deletes the us_customers procedure which we created previously.
 
