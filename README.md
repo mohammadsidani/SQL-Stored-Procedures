@@ -7,7 +7,7 @@ Stored procedures are thus similar to functions in programming. They can perform
 ## Creating a Procedure
 
 Create stored procedures using the CREATE PROCEDURE command followed by SQL commands. For example,
-```SQLServer
+```sql
 -- SQL Server
 
 CREATE PROCEDURE us_customers AS
@@ -16,7 +16,7 @@ FROM Customers
 WHERE Country = 'USA';
 
 ```
-```PostgreSQL
+```sql
 -- PostgreSQL
 
 CREATE PROCEDURE us_customers ()
@@ -27,7 +27,7 @@ FROM Customers
 WHERE Country = 'USA';
 $$;
 ```
-```MySQL
+```sql
 -- MySQL
 
 DELIMITER //
@@ -39,7 +39,7 @@ WHERE Country = 'USA';
 END //
 DELIMITER ;
 ```
-```Oracle
+```sql
 -- Oracle
 CREATE OR REPLACE PROCEDURE us_customers (res OUT SYS_REFCURSOR)
 AS
