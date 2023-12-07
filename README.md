@@ -57,3 +57,31 @@ END;
 
 The commands above create a stored procedure named us_customers in various DBMS. This procedure selects the **customer_id** and **first_name** columns of those customers who live in the USA from the **Customers table**.
 
+
+## Executing Stored Procedure
+
+Now, whenever we want to fetch all customers who live in the USA, we can simply call the procedure mentioned above. For example:
+
+### SQL Server, Oracle
+
+```sql
+EXEC us_customers;
+```
+
+### PostgreSQL, MySQL
+
+```sql
+CALL us_customers();
+```
+
+## Drop Procedure
+
+Stored procedures can be deleted using the DROP PROCEDURE command. For example:
+
+### SQL Server, PostgreSQL, MySQL
+
+```sql
+DROP PROCEDURE us_customers;
+```
+
+Here, the SQL command deletes the `us_customers procedure` that we created previously.
