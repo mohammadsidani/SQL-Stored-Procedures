@@ -15,7 +15,5 @@ SELECT customer_id, first_name
 FROM Customers
 WHERE Country = 'USA';
 
---PostgreSQL
-
 
 
