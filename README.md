@@ -39,16 +39,23 @@ WHERE Country = 'USA';
 END //
 DELIMITER ;
 ```
-```Oracle
--- Oracle
+# Oracle Stored Procedure: `us_customers`
 
-CREATE PROCEDURE us_customers
-AS res SYS_REFCURSOR;  
+This Oracle stored procedure, named `us_customers`, retrieves customer information for customers located in the United States (USA).
+
+## Procedure Definition
+
+```sql
+-- Oracle
+CREATE OR REPLACE PROCEDURE us_customers (res OUT SYS_REFCURSOR)
+AS
 BEGIN
-open res for
-SELECT customer_id, first_name
-FROM Customers
-WHERE country = 'USA';
-DBMS_SQL.RETURN_RESULT(res);
+    OPEN res FOR
+    SELECT customer_id, first_name
+    FROM Customers
+    WHERE country = 'USA';
+    DBMS_SQL.RETURN_RESULT(res);
 END;
+/
+
 ```
