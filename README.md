@@ -41,14 +41,14 @@ DELIMITER ;
 ```
 ```sql
 -- Oracle
-CREATE OR REPLACE PROCEDURE us_customers (res OUT SYS_REFCURSOR)
-AS
+
+CREATE PROCEDURE us_customers
+AS res SYS_REFCURSOR;  
 BEGIN
-    OPEN res FOR
-    SELECT customer_id, first_name
-    FROM Customers
-    WHERE country = 'USA';
-    DBMS_SQL.RETURN_RESULT(res);
+open res for
+SELECT customer_id, first_name
+FROM Customers
+WHERE country = 'USA';
+DBMS_SQL.RETURN_RESULT(res);
 END;
-/
 ```
