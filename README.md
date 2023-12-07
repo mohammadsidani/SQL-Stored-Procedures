@@ -52,6 +52,6 @@ WHERE country = 'USA';
 DBMS_SQL.RETURN_RESULT(res);
 END;
 ```
-The commands above create a stored procedure named us_customers in various DBMS. This procedure selects the customer_id and first_name columns of those customers who live in the USA from the Customers table.
+The commands above create a stored procedure named us_customers in various DBMS. This procedure selects the **customer_id** and **first_name** columns of those customers who live in the USA from the **Customers table**.
 
 
