@@ -14,4 +14,4 @@ CREATE PROCEDURE us_customers AS
 SELECT customer_id, first_name
 FROM Customers
 WHERE Country = 'USA';
---
+---
