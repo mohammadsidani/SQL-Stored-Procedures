@@ -11,7 +11,6 @@ Create stored procedures using the `CREATE PROCEDURE` command followed by SQL co
 ### SQL Server
 
 ```sql
--- SQL Server
 CREATE PROCEDURE us_customers AS
 SELECT customer_id, first_name
 FROM Customers
@@ -21,7 +20,6 @@ WHERE Country = 'USA';
 ### PostgreSQL
 
 ```sql
--- PostgreSQL
 CREATE PROCEDURE us_customers ()
 LANGUAGE SQL
 AS $$
