@@ -85,3 +85,6 @@ DROP PROCEDURE us_customers;
 ```
 
 Here, the SQL command deletes the `us_customers procedure` that we created previously.
+
+![dbjpg](https://github.com/mohammadsidani/SQL-Stored-Procedures/assets/86320260/b49f554b-7d0d-4642-a870-06ec36a5e698)
+
