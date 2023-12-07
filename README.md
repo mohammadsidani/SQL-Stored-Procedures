@@ -28,3 +28,32 @@ FROM Customers
 WHERE Country = 'USA';
 $$;
 ```
+
+### MySQL
+
+```sql
+DELIMITER //
+CREATE PROCEDURE us_customers ()
+BEGIN
+    SELECT customer_id, first_name
+    FROM Customers
+    WHERE Country = 'USA';
+END //
+DELIMITER ;
+```
+### Oracle
+
+```sql
+CREATE PROCEDURE us_customers
+AS res SYS_REFCURSOR;  
+BEGIN
+    OPEN res FOR
+    SELECT customer_id, first_name
+    FROM Customers
+    WHERE country = 'USA';
+    DBMS_SQL.RETURN_RESULT(res);
+END;
+```
+
+The commands above create a stored procedure named us_customers in various DBMS. This procedure selects the **customer_id** and **first_name** columns of those customers who live in the USA from the **Customers table**.
+
