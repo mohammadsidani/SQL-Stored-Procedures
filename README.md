@@ -39,13 +39,7 @@ WHERE Country = 'USA';
 END //
 DELIMITER ;
 ```
-# Oracle Stored Procedure: `us_customers`
-
-This Oracle stored procedure, named `us_customers`, retrieves customer information for customers located in the United States (USA).
-
-## Procedure Definition
-
-```sql
+```Oracle
 -- Oracle
 CREATE OR REPLACE PROCEDURE us_customers (res OUT SYS_REFCURSOR)
 AS
@@ -57,5 +51,4 @@ BEGIN
     DBMS_SQL.RETURN_RESULT(res);
 END;
 /
-
 ```
