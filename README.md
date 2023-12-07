@@ -7,6 +7,7 @@ Stored procedures are thus similar to functions in programming. They can perform
 ## Creating a Procedure
 
 Create stored procedures using the CREATE PROCEDURE command followed by SQL commands.
+
 -- SQL 
 
 
