@@ -62,7 +62,11 @@ Now, whenever we want to fetch all customers who live in the USA, we can simply 
 -- SQL Server, Oracle
 
 EXEC us_customers;
+```
+```sql
+-- PostgreSQL, MySQL
 
+CALL us_customers();
 ```
 
 
